@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fontawesome-webfont.eot?v=4.7.0');
+  src: url('fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+       url('fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+       url('fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+       url('fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Berlin Sans FB Demi Bold';
+  src: url('Berlin Sans FB Demi Bold.eot');
+  src: url('Berlin Sans FB Demi Bold.eot?#iefix') format('embedded-opentype'),
+       url('Berlin Sans FB Demi Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BerlinSansFBDemi-Bold';
+  src: url('BerlinSansFBDemi-Bold.svg#BerlinSansFBDemi-Bold') format('svg'),
+       url('BerlinSansFBDemi-Bold.ttf') format('truetype'),
+       url('BerlinSansFBDemi-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClarendonBT-Black';
+  src: url('ClarendonBT-Black.svg#ClarendonBT-Black') format('svg'),
+       url('ClarendonBT-Black.ttf') format('truetype'),
+       url('ClarendonBT-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'clarendon-black-bt';
+  src: url('clarendon-black-bt.eot');
+  src: url('clarendon-black-bt.eot?#iefix') format('embedded-opentype'),
+       url('clarendon-black-bt.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ARLRDBD';
+  src: url('ARLRDBD.eot');
+  src: url('ARLRDBD.eot?#iefix') format('embedded-opentype'),
+       url('ARLRDBD.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArialRoundedMTBold';
+  src: url('ArialRoundedMTBold.svg#ArialRoundedMTBold') format('svg'),
+       url('ArialRoundedMTBold.ttf') format('truetype'),
+       url('ArialRoundedMTBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('Segoe UI Bold.eot');
+  src: url('Segoe UI Bold.eot?#iefix') format('embedded-opentype'),
+       url('Segoe UI Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI-Bold';
+  src: url('SegoeUI-Bold.svg#SegoeUI-Bold') format('svg'),
+       url('SegoeUI-Bold.ttf') format('truetype'),
+       url('SegoeUI-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('SegoeUI.svg#SegoeUI') format('svg'),
+       url('SegoeUI.ttf') format('truetype'),
+       url('SegoeUI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'segoeui';
+  src: url('segoeui.eot');
+  src: url('segoeui.eot?#iefix') format('embedded-opentype'),
+       url('segoeui.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('MyriadPro-Regular.eot');
+  src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'),
+       url('MyriadPro-Regular.ttf') format('truetype'),
+       url('MyriadPro-Regular.woff') format('woff'),
+       url('MyriadPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+

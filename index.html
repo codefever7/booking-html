@@ -1,0 +1,1510 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>MetroNest</title>
+<meta name="description" content="" />
+<meta name="title" content="" />
+<meta name="keywords" content="" />
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://use.typekit.net/yeg5cmi.css">
+<!-- Bootstrap -->
+<!--=== Add By Designer ===-->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href="css/bootstrap-datepicker.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="fonts/fonts.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+<!--=== Windows Phone JS Code Start ===-->
+<script type="text/javascript">
+	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	  var msViewportStyle = document.createElement('style')
+	  msViewportStyle.appendChild(
+		document.createTextNode(
+		  '@-ms-viewport{width:auto!important}'
+		)
+	  )
+	  document.querySelector('head').appendChild(msViewportStyle)
+	}
+</script>
+<!--=== Windows Phone JS Code End ===-->
+
+</head>
+<body>
+
+<!-- header start -->
+<div class="header">
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="#">
+				<img src="images/logo.png" alt="logo" class="img-fluid">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			  <span class="navbar-toggler-icon"></span>
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav align-items-center">
+				<li class="nav-item country">
+					<div class="flag">
+						<img src="images/languages.png" alt="flg" class="img-fluid">
+					</div>
+				  <a class="nav-link" href="#">Country</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">
+					<img src="images/currancy.png" alt="currancy" class="img-fluid">  
+					currency</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Language
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">English</a>
+					<a class="dropdown-item" href="#">Gujarati</a>
+					</div>
+				</li>
+			  </ul>
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Sign-in</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Sign-out</a>
+				</li>
+			</ul>
+			</div>
+		</nav>
+		
+	</div>
+</div>
+<!-- header end -->
+
+<div class="top-btn">
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+		  <a class="nav-link active explore-btn top-btns" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Flights</a>
+		</li>
+		<li class="nav-item" role="presentation">
+		  <a class="nav-link explore-btn top-btns" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hotels</a>
+		</li>
+		<li class="nav-item" role="presentation">
+		  <a class="nav-link explore-btn top-btns" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Car Rental</a>
+		</li>
+	  </ul>
+	<div class="banner-section" style="background-image: url(./images/home-banner.png);">
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+				<div class="container-fluid">
+					<div class="filter-data">
+						<div class="custom-radio">
+							<ul>
+								<li>
+									<div class="custom-control custom-radio">
+										<label class="custom-label" for="customRadio2">
+											Round Trip
+										</label>
+										<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+										<span class="check"></span>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-radio">
+										<label class="custom-label" for="Way">
+											One Way
+										</label>
+										<input type="radio" id="Way" name="customRadio" class="custom-control-input">
+										<span class="check"></span>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-radio">
+										<label class="custom-label" for="City">
+											Multi City
+										</label>
+										<input type="radio" id="City" name="customRadio" class="custom-control-input">
+										<span class="check"></span>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-radio">
+										<label class="custom-label" for="Depart">
+											Depart
+										</label>
+										<input type="radio" id="Depart" name="customRadio" class="custom-control-input">
+										<span class="check"></span>
+									</div>
+								</li>
+								<li>
+									<div class="custom-control custom-radio">
+										<label class="custom-label" for="Return">
+											Return
+										</label>
+										<input type="radio" id="Return" name="customRadio" class="custom-control-input">
+										<span class="check"></span>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="row">
+							<div class="col-xl-11 col-lg-12 col-md-12">
+								<div class="custom-form">
+									<form action="">
+										<div class="filter-left">
+										<div class="filter-block">						 
+											<label for="from">From</label>
+												<div class="plus">
+													<input type="text" name="size" id="from" readonly class="form-control" placeholder="bedroom"> 
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</div>
+												<div class="select-size dropdown-custom" style="display: none;">
+													<div class="close-btn"></div>
+												</div>
+										</div>	
+										<div class="filter-img">
+											<img src="images/filter-arrow.png" alt="fliter" class="img-fluid">
+										</div>
+										<div class="filter-block">
+											<label for="to">To</label>
+											<div class="plus">
+												<input type="text" name="" readonly id="to" class="form-control" placeholder="To?">
+												<i class="fa fa-plus" aria-hidden="true"></i>
+		
+											</div>
+											<div class="select-size dropdown-custom" style="display: none;">
+												<div class="close-btn"></div>
+												<h6>Can't decide where?</h6>
+											</div>
+										</div>
+										<div class="filter-block clender clender-btn">
+											<div class="clender">
+												<label for="date-input">Depart</label>
+												<div class="clender clender1">
+													<input type="text" readonly name=""  class="date-input form-control" placeholder="Aug 31, 2021">
+													<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+												</div>
+											</div>	
+											<div class="clender ">
+												<label for="date-input">Return</label>
+												<div class="clender2">
+													<input type="text" readonly name=""  class="date-input form-control" placeholder="Aug 31, 2021">
+													<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+												</div>
+											</div>
+				
+										</div>
+										<div class="filter-block">						 
+											<label for="from">Cabin Class & Travelers</label>
+												<div class="plus">
+													<input type="text" name="size" id="from" readonly="" class="form-control" placeholder="2 adults, 1room"> 
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</div>
+												<div class="select-size dropdown-custom">
+													<div class="close-btn"></div>
+													<div class="counter-main">
+														<div class="counter-block">
+															<div class="counter">
+																<input class="counter__input" type="text" value="1" name="counter" size="5" readonly="readonly"/>
+																<a class="counter__increment" href="#">+</a>
+																<a class="counter__decrement" href="#">&ndash;</a>
+															</div>
+															<h6>16+ years</h6>
+														</div>
+														<div class="counter-block">
+															<div class="counter">
+																<input class="counter__input" type="text" value="1" name="counter" size="5" readonly="readonly"/>
+																<a class="counter__increment" href="#">+</a>
+																<a class="counter__decrement" href="#">&ndash;</a>
+															</div>
+															<h6>16+ years</h6>
+														</div>
+													</div>
+												</div>
+										</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-end">
+							<div class="col-lg-6 col-md-8">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Footwear">
+											<span class="check"></span>
+											<label class="custom-label" for="Footwear">Add nearby airports</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="airports">
+											<span class="check"></span>
+											<label class="custom-label" for="airports">Add nearby airports</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="flights" checked>
+											<span class="check"></span>
+											<label class="custom-label" for="flights">Non-stop flights only</label>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="tickets">
+											<span class="check"></span>
+											<label class="custom-label" for="tickets">Flexible tickets only</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4">
+								<div class="search-btn">
+									<a href="#" class="explore-btn"> 
+										Search 
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<div class="container-fluid">
+					<div class="filter-data">
+						<div class="row">
+							<div class="col-xl-11 col-lg-12 col-md-12">
+								<div class="custom-form">
+									<form action="">
+										<div class="filter-left">
+										<div class="filter-block">						 
+											<label for="from">Where would you like to stay?</label>
+												<div class="plus">
+													<input type="text" name="size" id="from" readonly class="form-control" placeholder="bedroom"> 
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</div>
+												<div class="select-size dropdown-custom" style="display: none;">
+													<div class="close-btn"></div>
+													<ul>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																studio
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																one bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																two bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																three bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																four bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																five bedroom
+															</a>
+														</li>
+													</ul>
+												</div>
+										</div>
+										<div class="filter-img">
+											<img src="images/filter-arrow.png" alt="fliter" class="img-fluid">
+										</div>
+										<div class="filter-block clender clender-btn">
+											<div class="clender">
+												<label for="date-input">Depart</label>
+												<div class="clender clender1">
+													<input type="text" readonly name=""  class="date-input form-control" placeholder="Aug 31, 2021">
+													<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+		
+												</div>
+											</div>	
+											<div class="clender ">
+												<label for="date-input">Return</label>
+												<div class="clender2">
+													<input type="text" readonly name=""  class="date-input form-control" placeholder="Aug 31, 2021">
+													<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+												</div>
+											</div>
+				
+										</div>
+										<div class="filter-block">						 
+											<label for="from">Guests and rooms </label>
+												<div class="plus">
+													<input type="text" name="size" id="from" readonly class="form-control" placeholder="2 adults, 1room"> 
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</div>
+												<div class="select-size dropdown-custom" style="display: none;">
+													<div class="close-btn"></div>
+													<ul>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																studio
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																one bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																two bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																three bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																four bedroom
+															</a>
+														</li>
+														<li>
+															<input type="checkbox" name="size-c" id="">
+															<div class="checkmark"></div>
+															<a href="#">
+																five bedroom
+															</a>
+														</li>
+													</ul>
+												</div>
+										</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-end">
+							<div class="col-lg-8 col-md-12">
+								<div class="row">
+									<div class="col-md-3">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Footwear3">
+											<span class="check"></span>
+											<label class="custom-label" for="Footwear3">Free cancellation</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="airports3">
+											<span class="check"></span>
+											<label class="custom-label" for="airports3">Cleanliness 4.5/5 +</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="flights3">
+											<span class="check"></span>
+											<label class="custom-label" for="flights3">4 stars</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="tickets3">
+											<span class="check"></span>
+											<label class="custom-label" for="tickets3">3 stars</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3">
+								<div class="search-btn">
+									<a href="#" class="explore-btn"> 
+										Search 
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+				<div class="container-fluid">
+					<div class="filter-data">
+						<div class="row">
+							<div class="col-xl-11 col-lg-12 col-md-12">
+								<div class="custom-form">
+									<form action="">
+										<div class="filter-left">
+										<div class="filter-block">						 
+											<label for="from">Pick-up Location</label>
+												<div class="plus">
+													<input type="text" name="size" id="from" readonly class="form-control" placeholder="bedroom"> 
+													<i class="fa fa-plus" aria-hidden="true"></i>
+												</div>
+												<div class="select-size dropdown-custom" style="display: none;">
+													<div class="close-btn"></div>
+													
+												</div>
+										</div>
+										<div class="filter-block">
+											<label for="to">Pickup Date</label>
+											<div class="clender car">
+												<input type="text" readonly name=""  class="date-input form-control" placeholder="Aug 31, 2021">
+												<i class="fa fa-calendar-check-o" aria-hidden="true"></i>										
+											</div>
+										</div>
+										<div class="filter-block">
+											<label for="to">Time</label>
+											<select type="text" class="form-control"  id="exampleInputText5" placeholder="Time">
+												<option value="selected">Time</option>
+												<option value="selected">01:00</option>
+												<option value="selected">01:30</option>
+												<option value="selected">02:00</option>
+												<option value="selected">02:30</option>
+												<option value="selected">03:00</option>
+												<option value="selected">03:30</option>
+												<option value="selected">04:00</option>
+												<option value="selected">04:30</option>
+												<option value="selected">05:00</option>
+												<option value="selected">05:30</option>
+												<option value="selected">06:00</option>
+												<option value="selected">06:30</option>
+												<option value="selected">07:00</option>
+												<option value="selected">07:30</option>
+												<option value="selected">08:00</option>
+												<option value="selected">08:30</option>
+												<option value="selected">09:00</option>
+												<option value="selected">09:30</option>
+												<option value="selected">10:00</option>
+												<option value="selected">10:30</option>
+												<option value="selected">11:00</option>
+												<option value="selected">11:30</option>
+												<option value="selected">12:00</option>
+												<option value="selected">12:30</option>
+												<option value="selected">13:00</option>
+												<option value="selected">13:30</option>
+												<option value="selected">14:00</option>
+												<option value="selected">14:30</option>
+												<option value="selected">15:00</option>
+												<option value="selected">15:30</option>
+												<option value="selected">16:00</option>
+												<option value="selected">16:30</option>
+												<option value="selected">17:00</option>
+												<option value="selected">17:30</option>
+												<option value="selected">18:00</option>
+												<option value="selected">18:30</option>
+												<option value="selected">19:00</option>
+												<option value="selected">19:30</option>
+												<option value="selected">20:00</option>
+												<option value="selected">20:30</option>
+												<option value="selected">21:00</option>
+												<option value="selected">21:30</option>
+												<option value="selected">22:00</option>
+												<option value="selected">22:30</option>
+												<option value="selected">23:00</option>
+												<option value="selected">23:30</option>
+												<option value="selected">24:00</option>
+												<option value="selected">24:30</option>
+											</select>
+										</div>
+										<div class="filter-block">
+											<label for="to">Return Date</label>
+											<div class="clender car">
+												<input type="text" readonly name=""  class="date-input form-control" placeholder="Aug 31, 2021">
+												<i class="fa fa-calendar-check-o" aria-hidden="true"></i>										
+											</div>
+										</div>
+										<div class="filter-block">
+											<label for="to">Time</label>
+											<select type="text" class="form-control"  id="exampleInputText5" placeholder="Time">
+												<option value="selected">Time</option>
+												<option value="selected">01:00</option>
+												<option value="selected">01:30</option>
+												<option value="selected">02:00</option>
+												<option value="selected">02:30</option>
+												<option value="selected">03:00</option>
+												<option value="selected">03:30</option>
+												<option value="selected">04:00</option>
+												<option value="selected">04:30</option>
+												<option value="selected">05:00</option>
+												<option value="selected">05:30</option>
+												<option value="selected">06:00</option>
+												<option value="selected">06:30</option>
+												<option value="selected">07:00</option>
+												<option value="selected">07:30</option>
+												<option value="selected">08:00</option>
+												<option value="selected">08:30</option>
+												<option value="selected">09:00</option>
+												<option value="selected">09:30</option>
+												<option value="selected">10:00</option>
+												<option value="selected">10:30</option>
+												<option value="selected">11:00</option>
+												<option value="selected">11:30</option>
+												<option value="selected">12:00</option>
+												<option value="selected">12:30</option>
+												<option value="selected">13:00</option>
+												<option value="selected">13:30</option>
+												<option value="selected">14:00</option>
+												<option value="selected">14:30</option>
+												<option value="selected">15:00</option>
+												<option value="selected">15:30</option>
+												<option value="selected">16:00</option>
+												<option value="selected">16:30</option>
+												<option value="selected">17:00</option>
+												<option value="selected">17:30</option>
+												<option value="selected">18:00</option>
+												<option value="selected">18:30</option>
+												<option value="selected">19:00</option>
+												<option value="selected">19:30</option>
+												<option value="selected">20:00</option>
+												<option value="selected">20:30</option>
+												<option value="selected">21:00</option>
+												<option value="selected">21:30</option>
+												<option value="selected">22:00</option>
+												<option value="selected">22:30</option>
+												<option value="selected">23:00</option>
+												<option value="selected">23:30</option>
+												<option value="selected">24:00</option>
+												<option value="selected">24:30</option>
+											</select>
+										</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="row align-items-end">
+							<div class="col-lg-8 col-md-12">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Footwear">
+											<span class="check"></span>
+											<label class="custom-label" for="Footwear">Return car to a different location</label>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="airports" checked>
+											<span class="check"></span>
+											<label class="custom-label" for="airports">Driver aged between 25 - 75 
+												<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3">
+								<div class="search-btn">
+									<a href="#" class="explore-btn"> 
+										Search 
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- content start -->
+<div class="content clearfix">
+
+	<!-- travel-section start -->
+	<div class="travel-section">
+		<div class="container">
+			<div class="section-title">
+				<h2>Countries you can travel to now</h2>
+			</div>
+			<p>Popular destinations open to most visitors from India.</p>
+			<div class="custom-navs">
+				<ul class="nav nav-tabs" id="myTab1" role="tablist">
+					<li class="nav-item" role="presentation">
+					  <a class="nav-link active" id="home-tab1" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">International-Places</a>
+					</li>
+					<li class="nav-item" role="presentation">
+					  <a class="nav-link" id="profile-tab1" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile" aria-selected="false">Domestic-Places</a>
+					</li>
+					
+				  </ul>
+				  <div class="tab-content" id="myTabContent1">
+					<div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+						<div class="travel-slider">
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+						<div class="travel-slider">
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-item">
+								<img src="images/slider-1.jpg" alt="slider" class="img-fluid">
+								<div class="slider-detail">
+									<div class="inner-title red"><h2>London</h2></div>
+									<p>London is the capital and largest city of England and the United Kingdom. The city stands on the River Thames in the south-east of England, at the head of its 50-mile (80 km) estuary leading to the North Sea.</p>
+									<div class="reviews">
+										<div class="number">4.5</div>
+										<h6>8 reviews</h6>
+									</div>
+									<div class="get-btn">
+										<a href="#" class="comman-btn">Get Rates</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- travel-section end -->
+
+	<!-- flight-deals section start -->
+	<div class="flight-deals">
+		<div class="container">
+			<div class="flight-top">
+				<div class="section-title">
+					<h2>Best  Flight deals</h2>
+					<!-- <span>
+						<img src="images/flight.png" alt="flight">
+					</span> -->
+				</div>
+				<div class="more-flight">
+					<p>Check out these cheaper-than-average flight prices plus more destinations offering great value right now.
+					</p>
+					<a href="#">See More Details</a>
+				</div>
+
+			</div>
+			<div class="deals-block-main">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="deals-block">
+							<div class="flight-img">
+								<img src="images/deals.jpg" alt="deals" class="img-fluid">
+								<a href="#" class="low-btn">
+									<div class="right-symbol">
+										<i class="fa fa-check" aria-hidden="true"></i>
+									</div>Low restrictions
+								</a>
+								<div class="title">
+									<!-- <h2>Dubai</h2> -->
+								</div>
+							</div>
+							<div class="flight-details">
+								<div class="hour-block">
+									<div class="left-hour">
+										<img src="images/symbol.png" alt="symbol" class="img-fluid">
+										<p>Deal found 13 hours ago</p>
+									</div>
+									<div class="hours">
+										<div class="row justify-content-between">
+											<div class="col-md-6">
+												<div class="days">
+													<h6>Wed, Jul 21</h6>
+													<h6>Thu, Jul 29</h6>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="days-flight">
+													<h5>MUM</h5>
+													<span class="line"></span>
+													<!-- <span class="symbol-flight">
+														<img src="images/small-flight.png" alt="small-flight" class="img-fluid">
+													</span> -->
+													<h5>DUB</h5>
+												</div>
+												<div class="days-flight">
+													<h5>DUB</h5>
+													<span class="line"></span>
+													<!-- <span class="symbol-flight">
+														<img src="images/small-flight.png" alt="small-flight" class="img-fluid">
+													</span> -->
+													<h5>MUM</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flight-footer">
+								<div class="hotel-detail">
+									<div class="left-data">
+										<p>Average price: INR 1,564 <span>You save 10%</span></p>
+									</div>
+									<div class="right-data">
+										<p>From <span>INR 1,329</span></p>
+										<a href="#" class="explore-btn"> 
+											Explore 
+											<!-- <img src="images/white-flight.png" alt="small-flight" class="img-fluid"> -->
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="deals-block">
+							<div class="flight-img">
+								<img src="images/deals.jpg" alt="deals" class="img-fluid">
+								<a href="#" class="low-btn">
+									<div class="right-symbol">
+										<i class="fa fa-check" aria-hidden="true"></i>
+									</div>Low restrictions
+								</a>
+								<div class="title">
+									<!-- <h2>Dubai</h2> -->
+								</div>
+							</div>
+							<div class="flight-details">
+								<div class="hour-block">
+									<div class="left-hour">
+										<img src="images/symbol.png" alt="symbol" class="img-fluid">
+										<p>Deal found 13 hours ago</p>
+									</div>
+									<div class="hours">
+										<div class="row justify-content-between">
+											<div class="col-md-6">
+												<div class="days">
+													<h6>Wed, Jul 21</h6>
+													<h6>Thu, Jul 29</h6>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="days-flight">
+													<h5>MUM</h5>
+													<span class="line"></span>
+													<!-- <span class="symbol-flight">
+														<img src="images/small-flight.png" alt="small-flight" class="img-fluid">
+													</span> -->
+													<h5>DUB</h5>
+												</div>
+												<div class="days-flight">
+													<h5>DUB</h5>
+													<span class="line"></span>
+													<!-- <span class="symbol-flight">
+														<img src="images/small-flight.png" alt="small-flight" class="img-fluid">
+													</span> -->
+													<h5>MUM</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flight-footer">
+								<div class="hotel-detail">
+									<div class="left-data">
+										<p>Average price: INR 1,564 <span>You save 10%</span></p>
+									</div>
+									<div class="right-data">
+										<p>From <span>INR 1,329</span></p>
+										<a href="#" class="explore-btn"> 
+											Explore 
+											<!-- <img src="images/white-flight.png" alt="small-flight" class="img-fluid"> -->
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="deals-block">
+							<div class="flight-img">
+								<img src="images/deals.jpg" alt="deals" class="img-fluid">
+								<a href="#" class="low-btn">
+									<div class="right-symbol">
+										<i class="fa fa-check" aria-hidden="true"></i>
+									</div>Low restrictions
+								</a>
+								<div class="title">
+									<!-- <h2>Dubai</h2> -->
+								</div>
+							</div>
+							<div class="flight-details">
+								<div class="hour-block">
+									<div class="left-hour">
+										<img src="images/symbol.png" alt="symbol" class="img-fluid">
+										<p>Deal found 13 hours ago</p>
+									</div>
+									<div class="hours">
+										<div class="row justify-content-between">
+											<div class="col-md-6">
+												<div class="days">
+													<h6>Wed, Jul 21</h6>
+													<h6>Thu, Jul 29</h6>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="days-flight">
+													<h5>MUM</h5>
+													<span class="line"></span>
+													<!-- <span class="symbol-flight">
+														<img src="images/small-flight.png" alt="small-flight" class="img-fluid">
+													</span> -->
+													<h5>DUB</h5>
+												</div>
+												<div class="days-flight">
+													<h5>DUB</h5>
+													<span class="line"></span>
+													<!-- <span class="symbol-flight">
+														<img src="images/small-flight.png" alt="small-flight" class="img-fluid">
+													</span> -->
+													<h5>MUM</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flight-footer">
+								<div class="hotel-detail">
+									<div class="left-data">
+										<p>Average price: INR 1,564 <span>You save 10%</span></p>
+									</div>
+									<div class="right-data">
+										<p>From <span>INR 1,329</span></p>
+										<a href="#" class="explore-btn"> 
+											Explore 
+											<!-- <img src="images/white-flight.png" alt="small-flight" class="img-fluid"> -->
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- flight-deals section end -->
+
+	<!-- near-hotel section start -->
+	<div class="near-hotel">
+		<div class="container">
+			<div class="section-title">
+				<h2>Last minute hotels near you</h2>
+			</div>
+			<p>Find a great deal on a hotel for tonight or an upcoming trip</p>
+			<div class="hotel-main-block">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="hotel-block">
+							<div class="row">
+								<div class="col-lg-4 col-md-12">
+									<div class="left-img">
+										<img src="images/hotel-img.png" alt="hotel" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-8 col-md-12">
+									<div class="hotel-detail">
+										<div class="left-data">
+											<div class="inner-title">
+												<h2>Burj al arab</h2>
+											</div>
+											<!-- <p>Dubai</p> -->
+											<a href="#" class="comman-btn">Great value</a>
+										</div>
+										<div class="right-data">
+											<div class="number">
+												10
+											</div>
+											<p>From <span>$1,329</span>For tonight</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-block">
+							<div class="row">
+								<div class="col-lg-4 col-md-12">
+									<div class="left-img">
+										<img src="images/hotel-img.png" alt="hotel" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-8 col-md-12">
+									<div class="hotel-detail">
+										<div class="left-data">
+											<div class="inner-title">
+												<h2>Burj al arab</h2>
+											</div>
+											<!-- <p>Dubai</p> -->
+											<a href="#" class="comman-btn">Great value</a>
+										</div>
+										<div class="right-data">
+											<div class="number">
+												10
+											</div>
+											<p>From <span>$1,329</span>For tonight</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-6">
+						<div class="hotel-block">
+							<div class="row">
+								<div class="col-lg-4 col-md-12">
+									<div class="left-img">
+										<img src="images/hotel-img.png" alt="hotel" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-8 col-md-12">
+									<div class="hotel-detail">
+										<div class="left-data">
+											<div class="inner-title">
+												<h2>Burj al arab</h2>
+											</div>
+											<!-- <p>Dubai</p> -->
+											<a href="#" class="comman-btn">Great value</a>
+										</div>
+										<div class="right-data">
+											<div class="number">
+												10
+											</div>
+											<p>From <span>$1,329</span>For tonight</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hotel-block">
+							<div class="row">
+								<div class="col-lg-4 col-md-12">
+									<div class="left-img">
+										<img src="images/hotel-img.png" alt="hotel" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-8 col-md-12">
+									<div class="hotel-detail">
+										<div class="left-data">
+											<div class="inner-title">
+												<h2>Burj al arab</h2>
+											</div>
+											<!-- <p>Dubai</p> -->
+											<a href="#" class="comman-btn">Great value</a>
+										</div>
+										<div class="right-data">
+											<div class="number">
+												10
+											</div>
+											<p>From <span>$1,329</span>For tonight</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- near-hotel section end -->
+
+	<!-- cities-section start -->
+	<div class="cities">
+		<div class="container">
+			<div class="section-title">
+				<h2>Trending cities</h2>
+			</div>
+			<p>The most searched for cities on UDBookings</p>
+			<div class="city-main">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="city-block">
+							<div class="row m-0 align-items-center">
+								<div class="col-lg-3 col-md-4 col-sm-3 p-0">
+									<div class="city-img">
+										<img src="images/city-1.png" alt="city" class="img-fluid">
+									</div>
+								</div>
+								<div class="col-lg-9 col-md-8 col-sm-9">
+									<div class="city-name">
+										<h2>FLIGHTS TO </h2>
+										<p>Mumbai</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- cities-section end -->
+</div>
+<!-- content end -->
+
+<section class="chatbox">
+	<a href="#" class="help-bx">
+		<img src="images/chatbot.png" alt="chat-box" class="chat-close img-fluid">
+		
+	</a>
+	<div class="chat-bot">
+		<div class="chat-header">
+			<h2>
+				WELCOME TO inAct
+			</h2>
+			<p>Ask Here Anything , Or Share Your Feedback Our Team Will Connect You In Nearest Time.</p>
+			<div class="socail-icon-chat">
+				<ul>
+					<li>
+						<a href="#">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+
+						</a>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="chat-body">
+			<form>
+				<div class="form-group">
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@example.com">
+				</div>
+				<div class="form-group">
+					<textarea type="text" id="" cols="30" rows="5" class="form-control msg-box" placeholder="Write Your Message....."></textarea>
+
+					
+				</div>
+				<div class="search-bar send-btn-chat">
+					<input type="text" id="searchInput" placeholder="Send Message....   ">
+					<div class="chat-search-icon">
+						<button type="submit">
+							<i class="fa fa-location-arrow" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- chatbot end -->
+
+
+<!-- footer start -->
+<footer class="footer clearfix">
+	<div class="f-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 col-md-6">
+					<div class="f-block">
+						<div class="f-title">
+							<h5>Explore</h5>
+						</div>
+						<div class="f-list">
+							<ul>
+								<li><a href="#">Airports</a></li>
+								<li><a href="#">Countries</a></li>
+								<li><a href="#">Airlines</a></li>
+								<li><a href="#">Flights</a></li>
+								<li><a href="#">Travel insurance</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-md-6">
+					<div class="f-block">
+						<div class="f-title">
+							<h5>Partners</h5>
+						</div>
+						<div class="f-list">
+							<ul>
+								<li><a href="#">Work with us</a></li>
+								<li><a href="#">Advertise with us</a></li>
+								<li><a href="#">Travel Insight</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-md-6">
+					<div class="f-block">
+						<div class="f-title">
+							<h5>Company</h5>
+						</div>
+						<div class="f-list">
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Why UDBookings?</a></li>
+								<li><a href="#">Media</a></li>
+								<li><a href="#">Our people</a></li>
+								<li><a href="#">Brand story</a></li>
+								<li><a href="#">Jobs</a></li>
+								<li><a href="#">Travel features & news</a></li>
+								<li><a href="#">Cookie policy</a></li>
+								<li><a href="#">Privacy policy</a></li>
+								<li><a href="#">Terms of service</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-md-6">
+					<div class="f-block">
+						<div class="f-title">
+							<h5>Help</h5>
+						</div>
+						<div class="f-list">
+							<ul>
+								<li><a href="#">Help</a></li>
+								<li><a href="#">Privacy settings</a></li>
+								<li><a href="#">Security</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy-right">
+			<p><a href="#">© UDBooking.com 2021</a></p>
+		</div>
+	</div>
+</footer>
+<!-- footer end -->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/slick.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/ofi.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

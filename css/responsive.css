@@ -1,0 +1,739 @@
+/*///////////////////////////////////////////////////////////////////////// Responsive CSS Structure /////////////////////////////////////////////////////////////////////////*/
+
+
+/*---------- Small Mobile , IPhone Start ----------*/
+
+/*=== Screen Size = 240, 320, 360, 480, 568 ===*/ 
+
+@media (min-width: 240px) and (max-width: 575px){
+    
+}
+@media (min-width: 375px) and (max-width: 767px){
+   
+}
+@media (max-width: 767px) {
+  .navbar .navbar-nav .dropdown-menu:after {
+    display: none;
+  }
+  .explore-btn {
+    font-size: 17px;
+    line-height: 17px;
+    padding: 7px 5px;
+  }
+  .chatbox {
+    display: none;
+  }
+  .chat-header img {
+    width: 75px;
+}
+.chat-header h2 {
+    font-size: 28px;
+    line-height: 37px;
+   
+}
+.socail-icon-chat li img {
+    width: 20px;
+}
+.chat-body .form-control {
+   
+    font-size: 20px;
+    line-height: 20px;
+}
+.chat-header p {
+    font-size: 20px;
+    line-height: 22px;
+    
+}
+.chat-bot {
+  width: 280px;
+}
+.socail-icon-chat {
+    padding: 5px 0;
+}
+.chat-body .msg-box {
+    height: 200px;
+}
+.chatbox {
+    right: 30px;
+}
+    .f-block {
+      margin-bottom: 20px;
+    }
+    .city-name {
+      margin-top: 10px;
+    }
+    .city-img img {
+      border-radius: 20px;
+      width: 100%;
+    }
+    .city-main .row [class*=col-] {
+      padding: 0 15px;
+    }
+    .city-main .row {
+      margin: 0 -15px;
+    }
+    .hotel-block::before {
+      display: none;
+    }
+    .left-img {
+      margin-bottom: 20px;
+    }
+    .inner-title h1, .inner-title h2, .inner-title h3, .inner-title h4, .inner-title h5, .inner-title h6 {
+      font-size: 25px;
+      line-height: 25px;
+   }
+   .clender-btn {
+     display: block;
+   }
+   .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
+    font-size: 25px;
+    line-height: 27px;
+    margin: 0 0 10px;
+  }
+  .custom-navs .nav-tabs .nav-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .custom-navs .nav-tabs .nav-item {
+    padding-right: 0px;
+  }
+  .slick-arrow {
+    width: 15px;
+  }
+  .slick-prev {
+    left: -12px;
+  }
+  .slick-next {
+    right: -12px;
+  }
+  .slick-slide {
+    margin: 0;
+  }
+  .deals-block-main .row [class*=col-] {
+    padding: 0 15px;
+  }
+  .deals-block-main .row {
+    margin: 0 -15px;
+  }
+  .title h2 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .hotel-detail {
+    display: block;
+  }
+  .right-data {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 15px 0 0;
+  }
+  .right-data p{
+    margin: 0;
+}
+  .right-data p span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .deals-block {
+    margin-bottom: 20px;
+  }
+  .filter-data {
+    padding: 20px 20px 20px;
+  }
+  .filter-block.like-block {
+    width: 100% !important;
+  }
+  .filter-block.clender {
+    width: 100%;
+  }
+  .clender2 .form-control {
+    border-radius: 12px !important;
+  }
+  .filter-left {
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+  .clender1 .form-control {
+    border-radius: 12px !important;
+  }
+  .clender12 .form-control {
+    border-radius: 12px !important;
+  }
+  .hotel-main-block>.row>[class*=col-] {
+    padding: 0 15px;
+  }
+  .hotel-main-block>.row {
+    margin: 0 -15px;
+  }
+  .filter-img {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .filter-block {
+    width: 100%;
+    margin: 0;
+  }
+  .filter-block .form-control {
+    width: 100%;
+  } 
+  .clender2::before {
+    display: none;
+  }
+  .clender {
+    margin: 10px 0;
+  }
+  .more-flight {
+    display: block;
+  }
+  .more-flight a {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .banner-section {
+    padding: 125px 0 30px;
+  }
+  /*  */
+  .plus i {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+  }
+  .cities, .near-hotel, .flight-deals, .travel-section {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 991px) {
+    
+}
+@media (min-width: 992px) {
+   
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background-color: red;
+    height: 45px;
+  }
+  .navbar-toggler-icon {
+    background-color: #fff;
+    margin-bottom: 4px;
+    display: block;
+    height: 4px;
+  }
+  .navbar-toggler-icon:last-child {
+    margin-bottom: 0;
+  }
+  .navbar .nav-item {
+    border-bottom: 2px solid red;
+    padding: 10px 0;
+  }
+  .navbar-nav.align-items-center {
+    align-items: unset !important;
+  }
+  .navbar .nav-item .nav-link {
+    font-size: 21px;
+    line-height: 20px;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .filter-block.clender {
+    width: 100%;
+  }
+  .filter-block.like-block {
+    width: 90% !important;
+  }
+  .chatbox {
+    display: none;
+  }
+  .filter-img {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .filter-block {
+    width: 90%;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .custom-radio .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .custom-form .filter-img {
+    margin: 31px 0 0 10px !important;
+  }
+  .filter-block .form-control {
+    width: 100%;
+  } 
+  .clender2::before {
+    display: none;
+  }
+  /* .clender {
+    margin: 10px 0;
+  } */
+  .more-flight {
+    display: block;
+  }
+  .more-flight a {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .filter-left {
+    width: 100%;
+    margin: 0;
+  }
+  .plus i {
+    right: 10px;
+  }
+  .custom-checkbox .custom-label {
+    font-size: 17px;
+    line-height: 17px; 
+  }
+  .filter-data {
+    padding: 20px 30px 20px;
+  }
+  .deals-block-main .row [class*=col-] {
+    padding: 0 15px;
+  }
+  .deals-block-main .row {
+    margin: 0 -15px;
+  }
+  .deals-block {
+    margin-bottom: 25px;
+  }
+  .left-img {
+    margin-bottom: 20px;
+  }
+  .cities, .near-hotel, .flight-deals, .travel-section {
+    padding: 30px 0;
+  } 
+  .city-main .row [class*=col-] {
+    padding: 0 15px;
+  }
+  .city-main .row {
+    margin: 0 -15px;
+  }
+  .city-name h2 {
+    font-size: 19px;
+    line-height: 19px;
+    margin: 0 0 10px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .navbar .nav-item {
+      padding: 0 14px;
+    }
+    .hotel-main-block>.row>[class*=col-] {
+      padding: 0 15px;
+    }
+    .hotel-main-block>.row> {
+      margin: 0 -15px;
+    }
+    .hotel-main-block [class*=col-]:first-child .hotel-block::before {
+      border-right: none;
+    }
+    /* .hotel-main-block>.row>[class*=col-] {
+      padding: 0 15px;
+    }
+    .hotel-main-block>.row> {
+      margin: 0 -15px;
+    } */
+    .filter-data {
+      padding: 30px 20px 20px;
+    }
+    .container {
+      max-width: 1100px;
+    }
+    /* .filter-left {
+      width: 100%;
+    } */
+    .deals-block-main .row [class*=col-] {
+      padding: 0 15px;
+    }
+    .deals-block-main .row {
+      margin: 0 -15px;
+    }
+    .city-main .row [class*=col-] {
+      padding: 0 15px;
+    } 
+    .city-main .row {
+      margin: 0 -15px;
+    }
+    .search-bar.send-btn-chat #searchInput {
+      height: 40px;
+      border-radius: 40px;
+      -webkit-border-radius: 40px;
+      -ms-border-radius: 40px;
+      -moz-border-radius: 40px;
+      -o-border-radius: 40px;
+  }
+  .search-bar.send-btn #searchInput {
+    height: 40px;
+}
+  .search-bar.send-btn img {
+      width: 30px;
+  }
+  .chat-header img {
+      width: 75px;
+  }
+  .chat-header h2 {
+      font-size: 21px;
+      line-height: 37px;
+    }
+    .socail-icon-chat li img {
+      width: 20px;
+  }
+  .chat-body .form-control {
+      font-size: 16px;
+      line-height: 16px;
+  }
+  .chat-header p {
+      font-size: 14px;
+      line-height: 18px;
+      
+  }
+  .chat-bot {
+      width: 310px;
+  }
+  .socail-icon-chat {
+      padding: 5px 0;
+  }
+  .chat-body .msg-box {
+      /* height: 200px; */
+  }
+  .chatbox {
+      right: 30px;
+  }
+  .filter-block {
+    width: 19%; 
+    margin: 0 19px;
+  }
+  .filter-block.like-block {
+    width: 25% !important;
+  }
+  .filter-block .form-control {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .clender.filter-block .form-control {
+    padding: 20px 20px 20px 35px !important;
+  }
+  .filter-block.like-block {
+    width: 24% !important;
+  }
+  .hotel-block::before {
+    left: -19px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .custom-navs .nav-tabs .nav-link {
+    font-size: 21px;
+    line-height: 21px;
+    padding: 7px 15px;
+  }
+  .chat-search-icon img {
+    width: 25px;
+  }
+  .hotel-main-block>.row>[class*=col-] {
+    padding: 0 15px;
+  }
+  .hotel-main-block>.row {
+    margin: 0 -15px;
+  }
+  .city-main .row [class*=col-] {
+    padding: 0 15px;
+  } 
+  .city-main .row {
+    margin: 0 -15px;
+  }
+  .navbar .nav-item .nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .inner-title h1, .inner-title h2, .inner-title h3, .inner-title h4, .inner-title h5, .inner-title h6 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .city-name h2 {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .city-name p {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .f-bottom .f-list ul li a {
+    font-size: 16px;
+    line-height: 13px;
+  }
+  .copy-right p {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .f-title h5 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .right-data p span {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .right-data p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .number {
+    font-size: 21px;
+    line-height: 21px;
+  } 
+  .hour-block h6 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .hour-block h5 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .slider-detail .comman-btn {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .filter-block {
+    width: 14%;
+  }
+  .filter-block .form-control {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .clender.filter-block .form-control {
+    padding: 20px 20px 20px 40px !important;
+  }
+  .deals-block-main .row [class*=col-] {
+    padding: 0 15px;
+  }
+  .deals-block-main .row {
+    margin: 0 -15px;
+  }
+  .hotel-block::before {
+    left: -20px;
+  }
+}
+
+
+
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .inner-title h1, .inner-title h2, .inner-title h3, .inner-title h4, .inner-title h5, .inner-title h6 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .slider-detail .comman-btn {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 8px 20px;
+  }
+  .custom-navs .nav-tabs .nav-link {
+    font-size: 21px;
+    line-height: 21px;
+    padding: 7px 15px;
+  }
+  .hotel-block::before {
+    left: -20px;
+  }
+  .chat-search-icon img {
+    width: 25px;
+  }
+  .hotel-main-block>.row>[class*=col-] {
+    padding: 0 15px;
+  }
+  .hotel-main-block>.row {
+    margin: 0 -15px;
+  }
+  .city-main .row [class*=col-] {
+    padding: 0 15px;
+  } 
+  .city-main .row {
+    margin: 0 -15px;
+  }
+  .navbar .nav-item .nav-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .inner-title h1, .inner-title h2, .inner-title h3, .inner-title h4, .inner-title h5, .inner-title h6 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .city-name h2 {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .city-name p {
+    font-size: 17px;
+    line-height: 17px;
+  }
+  .f-bottom .f-list ul li a {
+    font-size: 20px;
+    line-height: 17px;
+  }
+  .copy-right p {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .f-title h5 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .right-data p span {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .right-data p {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .number {
+    font-size: 21px;
+    line-height: 21px;
+  } 
+  .hour-block h6 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .hour-block h5 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .slider-detail .comman-btn {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .filter-block .form-control {
+    height: 46px;
+    font-size: 17px;
+    line-height: 17px;
+    padding: 13px 10px 13px !important;
+  }
+  .filter-block {
+    width: 15%;
+  }
+  .filter-img {
+    width: 45px;
+    height: 45px;
+  }
+  .filter-img img {
+    width: 25px;
+  }
+  .plus i {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .custom-control {
+    padding-left: 30px !important;
+  }
+  .custom-checkbox .custom-control-input {
+    height: 20px;
+    width: 20px;
+  }
+  .custom-checkbox .check {
+    height: 20px;
+    width: 20px;
+  }
+  .custom-checkbox .check:after {
+    width: 6px;
+    height: 15px;
+  }
+  .custom-checkbox .custom-label {
+    margin: 0;
+    font-size: 19px;
+    line-height: 19px;
+  }
+  .filter-block.clender {
+    width: 32%;
+  }
+  .clender.filter-block .form-control {
+    padding: 10px 20px 10px 40px !important;
+  }
+  .filter-left {
+    width: 95%;
+  }
+  .car .form-control {
+    padding: 10px 20px 10px 40px !important;
+  }
+  .header .dropdown-menu .dropdown-item {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .deals-block-main .row [class*=col-] {
+    padding: 0 15px;
+  }
+  .deals-block-main .row {
+    margin: 0 -15px;
+  }
+}
+
+
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+  .filter-block {
+    width: 15%;
+  }
+  .clender.filter-block .form-control {
+    padding: 20px 20px 20px 40px !important;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1599px) {
+  .filter-block {
+    width: 15%;
+  }
+  .clender.filter-block .form-control {
+    padding: 20px 20px 20px 40px !important;
+  }
+}
+@media (min-width: 1600px) and (max-width: 1699px) {
+   
+}
+@media (min-width: 1700px) and (max-width: 1799px) {
+  
+}
+@media (min-width: 1800px) and (max-width: 1899px) {
+   
+}
+@media (min-width: 1300px) {
+  /* .city-main .row [class*=col-] {
+    padding: 0 30px;
+  }
+  .city-main .row {margin: 0 -30px;}
+  .slick-prev {left: -20px;}
+  .slick-next {right: -20px;}
+  .hotel-main-block>.row>[class*=col-]  {padding: 0 15px;}
+  .hotel-main-block>.row {margin: 0 -15px;}
+  .hotel-block::before {left: -20px;} */
+}
+@media (min-width: 1700px) {
+  /* .container {
+      max-width: 1700px;
+  } */
+}
+
+/*---------- Large Desktop , Large Screen End ----------*/
